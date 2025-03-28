@@ -3,11 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Moradores</title>
+    <title>Cadastro de Morador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <main>
+        <div class="portariaTitle">
+            <h1 id="portaria">Portaria</h1>
+            <img src="./assets/Man in Headphones.png" alt="logo">
+            <h1>Virtual</h1>
+        </div>
+        <h3>Cadastro de moradores</h3>
+        <hr>
+        <div class="formulario">
+            <div class="campoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" aria-label="Área para inserir o nome">
+                <span class="erro" id="erroNome"></span>
+            </div>
+            <div class="campoForm">
+                <label for="bloco">Bloco:</label>
+                <input type="text" id="bloco" name="bloco" placeholder="Insira o bloco do seu apartamento" maxlength="1" aria-label="Área para inserir o bloco"> 
+                <span class="erro" id="erroBloco"></span>               
+            </div> 
+            <div class="campoForm">
+                <label for="apto">Apto:</label>
+                <input type="text" id="apartamento" name="apartamento" placeholder="Insira o número do seu apartamento" aria-label="Área para inserir o apartamento">
+                <span class="erro" id="erroApto"></span>               
+            </div> 
+            <div class="campoForm">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu número de telefone" aria-label="Área para inserir o telefone">
+                <span class="erro" id="erroTel"></span>               
+            </div>
+            <div class="campoForm">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Insira seu email" aria-label="Área para inserir o email">
+                <span class="erro" id="erroEmail"></span>               
+            </div>
+        </div>
+        <div class="statusForm">
+            <div>
+                <label for="morador">Morador</label>
+                <input type="radio">                
+            </div>
+            <div>
+                <label for="morador">Residente</label>
+                <input type="radio">
+            </div>
+            <div>
+                <label for="morador">Proprietário</label>
+                <input type="radio">
+            </div>
+        </div>
+                <button class="botaoForm" type="submit" onclick="cadastrarUser">Cadastrar-se</button>
+            
+    </main>
+
     <script src="./script.js"></script>
 </body>
 </html>
