@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Veículos</title>
+    <title>Cadastro de Morador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main>
-        <div>
-            <div>
-                <img src="" alt="logo">
-                <h4>Insira os dados do veículo abaixo:</h4>
-            </div>
-            <hr>
-            <div>
-                <label for="placa">Placa:</label>
-                <input type="text" maxlength="7">
-                <label for="modelo">Modelo:</label>
-                <input type="text">
-                <label for="cor">Cor:</label>
-                <input type="text">
-                <label for="vaga">N° da Vaga:</label>
-                <input type="text">
-            </div>
-            <div>
-                <button type="submit">Cadastrar veículo</button>
-            </div>
+        <div class="portariaTitle">
+            <h1 id="portaria">Portaria</h1>
+            <img src="./assets/Man in Headphones.png" alt="logo">
+            <h1>Virtual</h1>
         </div>
-    </main>
+        <h3>Cadastro de veículos</h3>
+        <hr>
+        <div class="formulario">
+            <div class="campoForm">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa" placeholder="Insira a placa do seu veículo" aria-label="Área para inserir o nome" maxlength="7">
+                <span class="erro" id="erroPlaca"></span>
+            </div>
+            <div class="campoForm">
+                <label for="bloco">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Insira o modelo do seu veículo" aria-label="Área para inserir o modelo do veículo"> 
+                <span class="erro" id="erroModelo"></span>               
+            </div> 
+            <div class="campoForm">
+                <label for="apto">Cor:</label>
+                <input type="text" id="cor" name="cor" placeholder="Insira a cor do seu veículo" aria-label="Área para inserir a cor do veículo">
+                <span class="erro" id="erroCor"></span>               
+            </div> 
+            <div class="campoForm">
+                <label for="telefone">N° da vaga:</label>
+                <input type="text" id="vaga" name="vaga" placeholder="Insira o número da vaga" aria-label="Área para inserir o número da vaga" maxlength="2">
+                <span class="erro" id="erroVaga"></span>               
+            </div>
+                <button class="botaoForm" type="submit" onclick="cadastrarVeiculo">Cadastrar-se</button>
+                <a href="./veiculo.html"><b>Não tem veículo?</b>Vá direto para a listagem de usuários</a>
+            
 
     <script src="./script.js"></script>
 </body>

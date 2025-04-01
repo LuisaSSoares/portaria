@@ -36,7 +36,7 @@
             </div> 
             <div class="campoForm">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu número de telefone" aria-label="Área para inserir o telefone">
+                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu número de telefone" aria-label="Área para inserir o telefone" maxlength="9">
                 <span class="erro" id="erroTel"></span>               
             </div>
             <div class="campoForm">
@@ -48,15 +48,15 @@
         <div class="statusForm">
             <div>
                 <label for="morador">Morador</label>
-                <input type="radio">                
+                <input type="radio"  name="tipo">                
             </div>
             <div>
-                <label for="morador">Residente</label>
-                <input type="radio">
+                <label for="residente">Residente</label>
+                <input type="radio"  name="tipo">
             </div>
             <div>
-                <label for="morador">Proprietário</label>
-                <input type="radio">
+                <label for="proprietario">Proprietário</label>
+                <input type="radio" name="tipo">
             </div>
         </div>
                 <button class="botaoForm" type="submit" onclick="cadastrarUser">Cadastrar-se</button>

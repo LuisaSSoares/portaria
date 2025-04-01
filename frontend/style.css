@@ -66,6 +66,10 @@ h3{
     box-shadow: 0 4px 2px -2px #868B8E; 
 }
 
+.campoForm input:hover{
+    background-color: #d1d4d5;
+}
+
 .campoForm input:focus{
     border: 2px solid #868B8E;
     outline: none;
@@ -96,6 +100,74 @@ input[type='radio'] {
     background-color: #868B8E;
     border: none;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
 
+}
+
+.botaoForm:hover{
+    cursor: pointer;
+    background-color: #545758;
+    border: 1px solid \#404343;
+}
+
+a{
+    font-size: 12px;
+    align-self: center;
+    margin-top: 20px;
+    color: black;
+    outline: none;
+}
+
+a:hover{
+    color: #424343;
+}
+
+.listaPortaria{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: center;
+   
+}
+
+#listagem{
+    max-width: 50%;
+}
+.listaPortaria h2{
+    font-size: 20px;
+    align-self: center;
+}
+
+#tabelaPortaria table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+th{
+    font-weight: 500;
+}
+  
+#tabelaPortaria th, #tabelaPortaria td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 2px;
+}
+
+.deletarBtn, .editarBtn {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.deletarBtn{
+    background-color: #dc3545;
+    color: white;
+}
+
+.editarBtn{
+    background-color: #ffc107;
+    color: white;
 }

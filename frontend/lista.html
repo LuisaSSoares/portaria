@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Moradores</title>
+    <title>Listagem de moradores e veículos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <script src="./script.js"></script>
+    <form id="cadastroCarros">
+        <main id="listagem">
+            <div class="portariaTitle">
+                <h1 id="portaria">Portaria</h1>
+                <img src="./assets/Man in Headphones.png" alt="logo">
+                <h1>Virtual</h1>
+            </div>
+            <section class="listaPortaria">
+                <h3>Lista de moradores e veículos</h3>
+                <hr>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nome:</th>
+                      <th>Bloco:</th>
+                      <th>Apartamento:</th>
+                      <th>Telefone:</th>
+                      <th>E-mail:</th>
+                      <th>Placa:</th>
+                      <th>Modelo:</th>
+                      <th>Cor:</th>
+                      <th>Número da vaga</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tabelaPortaria">
+                  </tbody>
+                </table>
+              </section>        
+            </main>
+    <script src="script.js"></script>
 </body>
 </html>
