@@ -21,45 +21,59 @@
         <div class="formulario">
             <div class="campoForm">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" aria-label="Área para inserir o nome">
-                <span class="erro" id="erroNome"></span>
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" aria-label="Área para inserir o nome">
+                    <span class="erro" id="erroNome"></span>                    
+                </div>
+
             </div>
             <div class="campoForm">
                 <label for="bloco">Bloco:</label>
-                <input type="text" id="bloco" name="bloco" placeholder="Insira o bloco do seu apartamento" maxlength="1" aria-label="Área para inserir o bloco"> 
-                <span class="erro" id="erroBloco"></span>               
+                <div>
+                    <input type="text" id="bloco" name="bloco" placeholder="Insira o bloco do seu apartamento" maxlength="1" aria-label="Área para inserir o bloco"> 
+                    <span class="erro" id="erroBloco"></span>     
+                </div>
+          
             </div> 
             <div class="campoForm">
                 <label for="apto">Apto:</label>
-                <input type="text" id="apartamento" name="apartamento" placeholder="Insira o número do seu apartamento" aria-label="Área para inserir o apartamento">
-                <span class="erro" id="erroApto"></span>               
+                <div>
+                    <input type="text" id="apartamento" name="apartamento" placeholder="Insira o número do seu apartamento" aria-label="Área para inserir o apartamento">
+                    <span class="erro" id="erroApto"></span>   
+                </div>
+            
             </div> 
             <div class="campoForm">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu número de telefone" aria-label="Área para inserir o telefone" maxlength="9">
-                <span class="erro" id="erroTel"></span>               
+                <div>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Insira seu número de telefone" aria-label="Área para inserir o telefone" maxlength="9">
+                    <span class="erro" id="erroTel"></span> 
+                </div>
+              
             </div>
             <div class="campoForm">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Insira seu email" aria-label="Área para inserir o email">
-                <span class="erro" id="erroEmail"></span>               
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Insira seu email" aria-label="Área para inserir o email">
+                    <span class="erro" id="erroEmail"></span>   
+                </div>
+            
             </div>
         </div>
         <div class="statusForm">
             <div>
-                <label for="morador">Morador</label>
-                <input type="radio"  name="tipo">                
-            </div>
-            <div>
-                <label for="residente">Residente</label>
-                <input type="radio"  name="tipo">
-            </div>
-            <div>
+                <label>Tipo de Morador:</label><br>
+                <input type="radio" id="visitante" name="tipo" value="visitante">
+                <label for="visitante">Visitante</label><br>
+
+                <input type="radio" id="residente" name="tipo" value="residente">
+                <label for="residente">Residente</label><br>
+
+                <input type="radio" id="proprietario" name="tipo" value="proprietario">
                 <label for="proprietario">Proprietário</label>
-                <input type="radio" name="tipo">
             </div>
         </div>
-                <button class="botaoForm" type="submit" onclick="cadastrarUser">Cadastrar-se</button>
+                <button class="botaoForm" type="submit" onclick="cadastrar(event)">Cadastrar-se</button>
             
     </main>
 

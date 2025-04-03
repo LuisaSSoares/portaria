@@ -21,26 +21,38 @@
         <div class="formulario">
             <div class="campoForm">
                 <label for="placa">Placa:</label>
-                <input type="text" id="placa" name="placa" placeholder="Insira a placa do seu veículo" aria-label="Área para inserir o nome" maxlength="7">
-                <span class="erro" id="erroPlaca"></span>
+                <div>
+                    <input type="text" id="placa" name="placa" placeholder="Insira a placa do seu veículo" aria-label="Área para inserir o nome" maxlength="7">
+                    <span class="erro" id="erroPlaca"></span>
+                </div>
+
             </div>
             <div class="campoForm">
-                <label for="bloco">Modelo:</label>
-                <input type="text" id="modelo" name="modelo" placeholder="Insira o modelo do seu veículo" aria-label="Área para inserir o modelo do veículo"> 
-                <span class="erro" id="erroModelo"></span>               
+                <label for="modelo">Modelo:</label>
+                <div>
+                    <input type="text" id="modelo" name="modelo" placeholder="Insira o modelo do seu veículo" aria-label="Área para inserir o modelo do veículo"> 
+                    <span class="erro" id="erroModelo"></span>   
+                </div>
+            
             </div> 
             <div class="campoForm">
-                <label for="apto">Cor:</label>
-                <input type="text" id="cor" name="cor" placeholder="Insira a cor do seu veículo" aria-label="Área para inserir a cor do veículo">
-                <span class="erro" id="erroCor"></span>               
+                <label for="cor">Cor:</label>
+                <div>
+                    <input type="text" id="cor" name="cor" placeholder="Insira a cor do seu veículo" aria-label="Área para inserir a cor do veículo">
+                    <span class="erro" id="erroCor"></span>    
+                </div>
+           
             </div> 
             <div class="campoForm">
-                <label for="telefone">N° da vaga:</label>
-                <input type="text" id="vaga" name="vaga" placeholder="Insira o número da vaga" aria-label="Área para inserir o número da vaga" maxlength="2">
-                <span class="erro" id="erroVaga"></span>               
+                <label for="box">N° da vaga:</label>
+                <div>
+                    <input type="text" id="vaga" name="vaga" placeholder="Insira o número da vaga" aria-label="Área para inserir o número da vaga" maxlength="2">
+                    <span class="erro" id="erroVaga"></span>  
+                </div>
+             
             </div>
-                <button class="botaoForm" type="submit" onclick="cadastrarVeiculo">Cadastrar-se</button>
-                <a href="./veiculo.html"><b>Não tem veículo?</b>Vá direto para a listagem de usuários</a>
+                <button class="botaoForm" type="submit" onclick="cadastrarV(event)">Cadastrar-se</button>
+                <a href="./lista.html"><b>Não tem veículo?</b>Vá direto para a listagem de usuários</a>
             
 
     <script src="./script.js"></script>
