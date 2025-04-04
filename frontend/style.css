@@ -203,10 +203,9 @@ th{
 }
 
 /* Deixando responsivo com Media Queries */
-@media(max-width: 800px) and (min-width: 450px)  {
+@media (max-width: 1000px) {
     main {
-        max-width: 80%;
-        height: auto;
+        max-width: 40%;
         padding: 20px;
     }
 
@@ -215,7 +214,55 @@ th{
     }
 
     .campoForm input {
-        width: 60vw;
+        width: 30vw;
+        height: 4vh;
+    }
+
+    .statusForm {
+        font-size: 18px;
+    }
+
+    .botaoForm {
+        padding: 12px;
+    }
+    
+}
+
+@media (max-width: 970px) {
+    main {
+        max-width: 40%;
+        padding: 20px;
+    }
+
+    .portariaTitle h1 {
+        font-size: 34px;
+    }
+
+    .campoForm input {
+        width: 30vw;
+        height: 4vh;
+    }
+
+    .statusForm {
+        font-size: 18px;
+    }
+
+    .botaoForm {
+        padding: 12px;
+    }    
+}
+@media(max-width: 850px) and (min-width: 450px)  {
+    main {
+        max-width: 50%;
+        padding: 20px;
+    }
+
+    .portariaTitle h1 {
+        font-size: 34px;
+    }
+
+    .campoForm input {
+        width: 40vw;
         height: 4vh;
         margin-left: 0;
     }
@@ -231,7 +278,7 @@ th{
 
 @media(max-width: 450px){
     main {
-        max-width: 90%; 
+        max-width: 80%; 
         padding: 20px;
     }
 
