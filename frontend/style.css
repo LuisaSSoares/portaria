@@ -153,32 +153,28 @@ th{
     font-weight: 500;
 }
 
-/* Faz com que a tabela ocupe toda a largura da tela */
 #tabelaPortaria {
     width: 100%;
     max-width: 100vw;
-    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    overflow-x: auto; 
 }
 
-/* Faz com que a tabela use toda a largura da tela */
 #tabelaPortaria table {
     width: 100%;
     border-collapse: collapse;
 }
 
-/* Garante que as células tenham um tamanho adequado */
 #tabelaPortaria th, #tabelaPortaria td {
     padding: 8px;
     border: 1px solid #ccc;
     text-align: center;
-    white-space: nowrap; /* Evita quebra de linha dentro das células */
+    white-space: nowrap; 
     font-size: 14px;
 }
 
-/* Ajusta o tamanho mínimo das colunas para que o conteúdo fique bem distribuído */
 #tabelaPortaria td input {
     width: 100%;
-    min-width: 80px; /* Ajusta o tamanho mínimo dos inputs */
+    min-width: 80px; 
     text-align: center;
 }
 

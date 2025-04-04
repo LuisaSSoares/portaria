@@ -1,5 +1,4 @@
 //Função após clicar em "novo veículo"
-
 function novoVeiculo(event, id) {
     event.preventDefault();
     localStorage.setItem('moradorId', id);
@@ -55,7 +54,7 @@ async function cadastrar(event) {
         erroTel.textContent = ""
     }
     if (!email) {
-        erroEmail.textContent = "⚠️ O campo de nome é obrigatório"
+        erroEmail.textContent = "⚠️ O campo de email é obrigatório"
         erroEmail.style.display = "block"
         temErro = true
     } else {
