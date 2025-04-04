@@ -201,3 +201,54 @@ th{
     background-color: rgb(49, 114, 0);
     color: white;
 }
+
+/* Deixando responsivo com Media Queries */
+@media(max-width: 800px) and (min-width: 450px)  {
+    main {
+        max-width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .portariaTitle h1 {
+        font-size: 34px;
+    }
+
+    .campoForm input {
+        width: 60vw;
+        height: 4vh;
+        margin-left: 0;
+    }
+
+    .statusForm {
+        font-size: 18px;
+    }
+
+    .botaoForm {
+        padding: 12px;
+    }
+}
+
+@media(max-width: 450px){
+    main {
+        max-width: 90%; 
+        padding: 20px;
+    }
+
+    .portariaTitle h1 {
+        font-size: 30px; 
+    }
+
+    .campoForm {
+        align-items: center;
+    }
+
+    .campoForm input {
+        width: 60vw;
+        height: 4vh;
+    }
+
+    .botaoForm {
+        padding: 12px;
+    }
+}
