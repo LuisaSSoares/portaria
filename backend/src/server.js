@@ -43,7 +43,7 @@ app.post("/carro/cadastrar", (req, res) => {
 // Listar moradores e veículos
 app.get("/listar", (req, res) => {
     const sql = `
-        SELECT m.id, m.nome, m.bloco, m.apartamento, m.telefone, m.email, 
+        SELECT m.id, m.nome, m.bloco, m.apartamento, m.telefone, m.email, m.status, 
                v.placa, v.modelo, v.cor, v.box 
         FROM moradores m 
         LEFT JOIN veiculos v ON m.id = v.morador_id`;
@@ -61,12 +61,12 @@ app.get("/listar", (req, res) => {
 // Atualizar morador e veículo
 app.put("/atualizar/:id", (req, res) => {
     const { id } = req.params;
-    const { nome, bloco, apartamento, telefone, email, placa, modelo, cor, box } = req.body;
+    const { nome, bloco, apartamento, telefone, email, status, placa, modelo, cor, box } = req.body;
 
-    const sqlMorador = "UPDATE moradores SET nome=?, bloco=?, apartamento=?, telefone=?, email=? WHERE id=?";
+    const sqlMorador = "UPDATE moradores SET nome=?, bloco=?, apartamento=?, telefone=?, email=?, status=? WHERE id=?";
     const sqlVeiculo = "UPDATE veiculos SET placa=?, modelo=?, cor=?, box=? WHERE morador_id=?";
 
-    db.query(sqlMorador, [nome, bloco, apartamento, telefone, email, id], err => {
+    db.query(sqlMorador, [nome, bloco, apartamento, telefone, email, status, id], err => {
         if (err) return res.json({ success: false, message: "Erro ao atualizar morador." });
 
         db.query(sqlVeiculo, [placa, modelo, cor, box, id], err => {

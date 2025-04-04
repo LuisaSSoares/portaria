@@ -5,6 +5,10 @@ function novoVeiculo(event, id) {
     window.location.href = "./veiculo.html"; 
 }
 
+const logo = document.getElementById('logo')
+logo.addEventListener('click', function() {
+    window.location.href = './index.html'
+})
 
 // Cadastro Morador
 async function cadastrar(event) {
@@ -178,7 +182,7 @@ async function listarMoradoresEVeiculos() {
         const row = document.createElement("tr");
 
         // Criar células com campos editáveis
-        const campos = ["nome", "bloco", "apartamento", "telefone", "email", "placa", "modelo", "cor", "box"];
+        const campos = ["nome", "bloco", "apartamento", "telefone", "email", "status", "placa", "modelo", "cor", "box"];
         const inputs = {};
 
         campos.forEach(campo => {
